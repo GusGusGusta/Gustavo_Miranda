@@ -1,9 +1,9 @@
 body{
-    width: 470px;
-    height: 240px;
-    display: grid;
-    place-content: center;
-    margin-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
 }
 
 form{
