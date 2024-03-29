@@ -1,124 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-		<!-- Etiqueta para lograr un comportamiento de respuesta adecuado en dispositivos móviles. -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bootstrap plantilla</title>
-		<!-- Las 3 metaetiquetas anteriores *deben* aparecer primero en el encabezado; cualquier otro contenido principal 
-			debe ir *después* de estas etiquetas -->
-		<!-- CSS principal de Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Hack de ventana gráfica de IE10 para errores de Surface/escritorio en Windows 8 -->
-		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style_login.css" rel="stylesheet" >
+   <title>Document</title>
 </head>
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-        
-            <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed"
-                data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="#">800_810TJ04</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                 <li class="active"><a href="index.html">Inicio</a></li>
-                 <li><a href="#">Enlace1</a></li>
-                 <li><a href="#">Enlace2</a></li>
-                 <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                aria-haspopup="true" aria-expanded="false">Enlace2
-                <span class="caret"></span></a>
-                 <ul class="dropdown-menu">
-                <li><a href="#">Opción1</a></li>
-                <li><a href="#">Opción2</a></li>
-                <li><a href="#">Opción3</a></li>
-                 </ul>
-                 </li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        
-        
-        
-    </nav>
-<!-- Titulo principal -->
-    <div class="jumbotron">
-     <div class="container">
-        <h1>DESARROLLO WEB</h1>
-        <p>Sitio de ejemplo en el uso de bootstrap</p>
-        <!--<p><a class="btn btn-primary btn-lg" href="#"
-        role="button">OpciónX &raquo;</a></p>-->
-     </div>
-    </div>
-<div class="alert alert-success" role="alert"></div>
-<div class="row">
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="img/snorlax.jpg" alt="imagen">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="img/snorlax.jpg" alt="imagen">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="img/snorlax.jpg" alt="imagen">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="img/snorlax.jpg" alt="imagen">
-    </a>
-  </div>
-  
-</div>
-<div class="alert alert-success" role="alert"></div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-md-6">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>		
 
-<div class="alert alert-success" role="alert"></div>
- 
-<footer class="container-fluid text-center">
-<p>Copyright @2023 <a href="#">Alumno Ing Inf</a></p>
-</footer>
- 
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
-<!-- Hack de ventana gráfica de IE10 para errores de Surface/escritorio en Windows 8 -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+<body>
+  <form>
+    <h1>login</h1>
+    <label>Username</label>
+    <input type="text">
+    <label>Password</label>
+    <input type="text">
+    <p><a href="#">olvido de contraseña?</a></p>
+    <button>entrar</button>
+    <p>no tienes cuenta ? <a href="#">registro</a></p>
+  </form>
 </body>
+
 </html>
