@@ -11,7 +11,7 @@ form{
     height: 500px;
     display: grid;
     place-content: center;
-    background-color: lavender;
+    background-color: #757575;
     color: black;
     border-radius: 20px;
 }
@@ -22,7 +22,7 @@ input{
     border-radius: 12px;
     background-color: lavender;
     border-color: lavenderblush;
-    box-shadow: 0 0 5px 5px lavenderblush;
+    box-shadow: 0 0 2px 2px lavenderblush;
     display: grid;
     place-content: center;
     margin-top: 10px;
@@ -43,6 +43,9 @@ h1{
     display: grid;
     place-content: center;
 }
+
+
+
 a{
     text-decoration: none;
     color: blue;

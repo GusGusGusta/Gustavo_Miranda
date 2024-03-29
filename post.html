@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Post</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Gracias, aca estan tus datos. </h1>
+    </header>
+    <section class="formulario">
+        <fieldset>
+            <div class="contenedor-campos">
+            <!-- get data from past form whit javascrip-->
+            <p id="nombre"></p>
+            <p id="telefono"></p>
+            <p id="correo"></p>
+            <p id="mensaje"></p>
+        </div>
+            </fieldset>
+    </section>
+</body>
+<script>
+    // Obtener los datos del almacenamiento local
+    var nombre = localStorage.getItem('nombre');
+    var telefono = localStorage.getItem('telefono');
+    var correo = localStorage.getItem('correo');
+    var mensaje = localStorage.getItem('mensaje');
+    
+    // Mostrar los datos en la página
+    document.getElementById('nombre').textContent = "Nombre: "+nombre;
+    document.getElementById('telefono').textContent = "Telefono: "+telefono;
+    document.getElementById('correo').textContent = "Correo: "+ correo;
+    document.getElementById('mensaje').textContent = " Mensaje: "+ mensaje;
+    
+    // Limpiar el almacenamiento local después de mostrar los datos
+    localStorage.removeItem('nombre');
+    localStorage.removeItem('telefono');
+    localStorage.removeItem('correo');
+    localStorage.removeItem('mensaje');
+</script>
+</html>

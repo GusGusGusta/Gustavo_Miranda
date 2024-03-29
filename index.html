@@ -4,24 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style_login.css" rel="stylesheet" >
-   <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-  <form>
-    <h1>login</h1>
-    <label>Username</label>
-    <input type="text">
-    <br>
-    <label>Password</label>
-    <input type="text">
-    <br>
-    <p><a href="#">olvido de contraseña?</a></p>
-    <a href="principal.html"><input class="styled" type="button" value="ingresar"/></a>
-    <br>
-    <br>
-    <p>no tienes cuenta ? <a href="#">registro</a></p>
-  </form>
+
+    <form class="formulario">
+        <h1>login</h1>
+        <label> <b>Username</b></label>
+        <input class="input-text" type="text" name="nombre" placeholder="Nombre">
+        <br>
+        <label> <b>Password</b></label>
+        <input type="text">
+        <br>
+        <p><a href="#">olvido de contraseña?</a></p>
+        <a href="principal.html"><input class="styled" type="submit" value="ingresar"/></a>        
+        <br>
+        <p>no tienes cuenta ? <a href="#">registro</a></p>
+     </form>
+ 
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.formulario').addEventListener('submit', function(e) {
+          e.preventDefault(); 
+          var nombre = document.querySelector('input[name="nombre"]').value;
+          localStorage.setItem('nombre', nombre);
+          window.location.href = 'principal.html';
+      });
+  });
+
+</script>
 
 </html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="js/post.js" as="script">
+    <script src="js/post.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">test </h1>
+    </header>
+
+    <section>
+        <h2>Contacto</h2>
+ <!-- on click go to post.html-->
+ <form class="formulario"><fieldset><legend>Contactános llenando todos los campos</legend>
+        <div class="contenedor-campos">
+		
+            <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" name="nombre" placeholder="Nombre">
+            </div>
+			
+            <div class="campo">
+                <label>Teléfono</label>
+                <input class="input-text" type="tel" name="telefono" placeholder="Teléfono">
+            </div>
+			
+            <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" name="correo" placeholder="Correo">
+            </div>
+			
+            <div class="campo">
+                <label>Mensaje:</label>
+                <textarea class="input-text" name="mensaje"></textarea>
+            </div>
+			
+        </div> <!--contenedor campos-->
+
+        <div class="alinear-derecha flex">
+            <input class="boton w-sm-100" type="submit" value="Enviar">
+        </div>
+		
+    </fieldset>
+</form>
+    </section>
+</main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.formulario').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            var nombre = document.querySelector('input[name="nombre"]').value;
+            var telefono = document.querySelector('input[name="telefono"]').value;
+            var correo = document.querySelector('input[name="correo"]').value;
+            var mensaje = document.querySelector('textarea[name="mensaje"]').value;
+
+            localStorage.setItem('nombre', nombre);
+            localStorage.setItem('telefono', telefono);
+            localStorage.setItem('correo', correo);
+            localStorage.setItem('mensaje', mensaje);
+
+            window.location.href = 'post.html';
+        });
+    });
+
+
+
+
+
+    
+</script>
+</html>
