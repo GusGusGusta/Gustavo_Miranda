@@ -3,12 +3,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-  
+    background-color:blanchedalmond;
 }
 
 form{
-    width: 300px;
-    height: 340px;
+    width: 400px;
+    height: 400px;
     display: grid;
     place-content: center;
     background-color: lavender;
@@ -22,11 +22,11 @@ input{
     border-radius: 12px;
     background-color: lavender;
     border-color: lavenderblush;
-    box-shadow: 0 0 5px 5px lavender;
+    box-shadow: 0 0 5px 5px lavenderblush;
     display: grid;
     place-content: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5x;
 }
 
 button{
@@ -35,15 +35,20 @@ button{
     color:black;
     background-color: white;
     border-color: lavenderblush;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 h1{
-    font-size: 34px;
+    font-size: 50px;
     display: grid;
     place-content: center;
 }
 a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+button a{
     text-decoration: none;
     color: black;
     font-weight: bold;
