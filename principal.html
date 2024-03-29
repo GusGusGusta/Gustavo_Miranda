@@ -27,13 +27,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                  </button>
-                 <a class="navbar-brand" href="#"><p id="nombre"></p></a>
-            </div>
+                 <a class="navbar-brand" href="#"><p id="nombre_usu"></p></a>
+                            </div>
+
+            
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                  <li class="active"><a href="index.html">Inicio</a></li>
-                 <li><a href="#">Enlace1</a></li>
-                 <li><a href="#">Enlace2</a></li>
+                 <li><a href="contacto.html">contacto</a></li>
+                 <li><a href="amorcito.html">amorcito</a></li>
                  <li class="dropdown">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                 aria-haspopup="true" aria-expanded="false">Enlace2
@@ -120,17 +122,5 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Hack de ventana gráfica de IE10 para errores de Surface/escritorio en Windows 8 -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-<script>
-  // Obtener los datos del almacenamiento local
-  var nombre = localStorage.getItem('nombre');
-  // Mostrar los datos en la página
-  document.getElementById('nombre').textContent = "Bienvenido: "+nombre;
-  // Limpiar el almacenamiento local después de mostrar los datos
-  localStorage.removeItem('nombre');
-
-</script>
-
-
 </body>
 </html>

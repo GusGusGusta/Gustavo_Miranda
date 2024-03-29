@@ -12,10 +12,10 @@
     <form class="formulario">
         <h1>login</h1>
         <label> <b>Username</b></label>
-        <input class="input-text" type="text" name="nombre" placeholder="Nombre" required>
+        <input class="input-text" type="text" name="nombre_usu" placeholder="Nombre">
         <br>
         <label> <b>Password</b></label>
-        <input type="text" required>
+        <input type="text">
         <br>
         <p><a href="#">olvido de contraseña?</a></p>
         <a href="principal.html"><input class="styled" type="submit" value="ingresar"/></a>        
@@ -28,8 +28,8 @@
   document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.formulario').addEventListener('submit', function(e) {
           e.preventDefault(); 
-          var nombre = document.querySelector('input[name="nombre"]').value;
-          localStorage.setItem('nombre', nombre);
+          var nombre_usu = document.querySelector('input[name="nombre_usu"]').value;
+          localStorage.setItem('nombre_usu', nombre_usu);
           window.location.href = 'principal.html';
       });
   });
