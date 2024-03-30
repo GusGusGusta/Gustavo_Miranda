@@ -8,7 +8,7 @@
 </head>
 <body>
     <section>
-        <form >        
+        <form class="formulario">        
             <h1>Login</h1>
 
             <div class="inputbox">
@@ -19,7 +19,7 @@
 
             <div class="inputbox">
                 <ion.icon name="lock-closed-outline"></ion.icon>
-                <input name ="pass" type="password" required>
+                <input name ="nombre_usu" type="password" required>
                 <label for="">Contraseña</label>
             </div>
 
@@ -27,8 +27,9 @@
                 <label for=""><input type="checkbox">recordar</label>
                 <a href="#">olvide contraseña</a>
             </div>   
-           <button>ingresar</button>
-           <input type="button" value="ir" onclick="ir()">
+          
+           <a href="principal.html"><input class="styled" type="submit" value="ingresar"/></a>  
+           
             <div class="register">
                 <p>no tengo cuenta <a href="#">registar</a></p>
             </div>
@@ -37,8 +38,14 @@
     </section>
 </body>
 <script>
-    function ir() {location.href ='principal.html';
-
-    }
-</script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.formulario').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            var nombre_usu = document.querySelector('input[name="nombre_usu"]').value;
+            localStorage.setItem('nombre_usu', nombre_usu);
+            window.location.href = 'principal.html';
+        });
+    });
+  
+  </script>
 </html>
