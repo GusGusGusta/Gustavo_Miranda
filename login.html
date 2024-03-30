@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilo_login.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form >        
+            <h1>Login</h1>
+
+            <div class="inputbox">
+                <ion.icon name="user-outline"></ion.icon>
+                <input name ="uss" type="text" required>
+                <label for="">usuario</label>
+            </div>
+
+            <div class="inputbox">
+                <ion.icon name="lock-closed-outline"></ion.icon>
+                <input name ="pass" type="password" required>
+                <label for="">Contraseña</label>
+            </div>
+
+            <div class="forget">
+                <label for=""><input type="checkbox">recordar</label>
+                <a href="#">olvide contraseña</a>
+            </div>   
+           <button>ingresar</button>
+           <input type="button" value="ir" onclick="ir()">
+            <div class="register">
+                <p>no tengo cuenta <a href="#">registar</a></p>
+            </div>
+
+        </form>    
+    </section>
+</body>
+<script>
+    function ir() {location.href ='principal.html';
+
+    }
+</script>
+</html>
